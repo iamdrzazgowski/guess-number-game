@@ -46,10 +46,10 @@ checkBtn.addEventListener('click', () => {
 
 againBtn.addEventListener('click', () => {
     secretNumber = Math.trunc(Math.random() * 20 + 1);
-    displayMessage('Start guessing...');
-    number.textContent = '?';
+    numberField.textContent = '?';
     currentScore = 20;
     scoreField.textContent = currentScore;
     inputNumber.value = '';
     document.querySelector('body').style.backgroundColor = '#222';
+    displayMessage('Start guessing...');
 });
