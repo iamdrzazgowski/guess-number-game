@@ -3,7 +3,7 @@
 const againBtn = document.querySelector('.again');
 const checkBtn = document.querySelector('.check');
 const messageField = document.querySelector('.message');
-const number = document.querySelector('.number');
+const numberField = document.querySelector('.number');
 const scoreField = document.querySelector('.score');
 const inputNumber = document.querySelector('.guess');
 const highscoreNumber = document.querySelector('.highscore');
@@ -26,6 +26,7 @@ checkBtn.addEventListener('click', () => {
         document.querySelector('body').style.backgroundColor = '#60b347';
 
         displayMessage('🎉 Correct Number!');
+        numberField.textContent = secretNumber;
 
         if (currentScore > highscore) {
             highscore = currentScore;
