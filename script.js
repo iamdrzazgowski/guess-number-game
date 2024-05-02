@@ -33,7 +33,7 @@ checkBtn.addEventListener('click', () => {
             highscoreNumber.textContent = highscore;
         }
     } else if (guess !== secretNumber) {
-        if (currentScore > 0) {
+        if (currentScore > 1) {
             currentScore--;
             scoreField.textContent = currentScore;
             guess > secretNumber ? displayMessage('To high!') : displayMessage('To low!');
