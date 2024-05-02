@@ -39,7 +39,7 @@ checkBtn.addEventListener('click', () => {
             guess > secretNumber ? displayMessage('To high!') : displayMessage('To low!');
         } else {
             displayMessage('💥 You lost the game!');
-            scoreField.textContent = '0';
+            scoreField.textContent = 0;
         }
     }
 });
